@@ -1,0 +1,158 @@
+.page {
+  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-columns: 1fr;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-family: Serif, serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-header {
+  background-color: yellowgreen;
+  padding: 20px;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.main-footer {
+  background-color: yellowgreen;
+  padding: 20px;
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.main-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__main {
+  grid-row: 2 / 3;
+  grid-column: 1;
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews__item {
+  padding: 100px 40px;
+}
+
+.reviews__review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-navigation__link {
+  text-transform: uppercase;
+}
+
+.site-navigation__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-navigation__item {
+  padding: 10px 20px;
+  color: white;
+  font-family: Serif, serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.site-navigation__phone {
+  color: black;
+  font-family: Serif, serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tariffs__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tariffs__item {
+  background-color: darkseagreen;
+  padding: 100px 50px;
+}
+
+.tariffs__item-header {
+  color: white;
+  font-family: Serif, serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
